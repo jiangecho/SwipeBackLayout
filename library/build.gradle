@@ -22,6 +22,11 @@ android {
         versionCode 1
         versionName version
     }
+    android {
+        lintOptions {
+                    abortOnError false
+                }
+    }
 }
 
 def siteUrl = 'https://github.com/ikew0ng/SwipeBackLayout'

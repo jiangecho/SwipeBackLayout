@@ -29,6 +29,11 @@ android {
             }
         }
     }
+    android {
+        lintOptions {
+                abortOnError false
+            }
+    }
 }
 
 if (project.hasProperty('storeFile')) {
