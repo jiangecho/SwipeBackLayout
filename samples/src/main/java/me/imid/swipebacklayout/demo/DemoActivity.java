@@ -69,6 +69,11 @@ public class DemoActivity extends SwipeBackActivity implements View.OnClickListe
             }
 
             @Override
+            public void onScrollLeftChange(int left) {
+
+            }
+
+            @Override
             public void onEdgeTouch(int edgeFlag) {
                 vibrate(VIBRATE_DURATION);
             }
