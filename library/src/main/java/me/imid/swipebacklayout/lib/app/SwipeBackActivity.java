@@ -1,6 +1,7 @@
 
 package me.imid.swipebacklayout.lib.app;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +16,12 @@ public class SwipeBackActivity extends AppCompatActivity implements SwipeBackAct
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        View view = findViewById(android.R.id.content);
+
+        Drawable drawable = view.getBackground();
+        if (drawable == null){
+            view.setBackgroundResource(android.R.color.white);
+        }
         mHelper = new SwipeBackActivityHelper(this);
         mHelper.onActivityCreate();
     }

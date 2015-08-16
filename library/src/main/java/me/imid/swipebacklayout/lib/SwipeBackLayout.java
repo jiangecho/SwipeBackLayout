@@ -75,7 +75,7 @@ public class SwipeBackLayout extends FrameLayout {
             EDGE_LEFT, EDGE_RIGHT, EDGE_BOTTOM, EDGE_ALL
     };
 
-    private int mEdgeFlag;
+    private int mEdgeFlag = EDGE_LEFT;
 
     /**
      * Threshold of scroll, we will close the activity, when scrollPercent over
